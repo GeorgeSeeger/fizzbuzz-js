@@ -18,7 +18,9 @@ Fizzbuzz.prototype.output = function(number){
     return 'fizzbuzz';
   } else if (this.isDivisibleByThree(number)) {
     return 'fizz';
-  } else {
+  } else if (this.isDivisibleByFive(number)) {
     return 'buzz';
+  } else {
+    return number;
   }
 };

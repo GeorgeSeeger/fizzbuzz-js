@@ -40,4 +40,8 @@ describe("Fizzbuzz", function() {
   it("should return fizzbuzz if the number is divisible by both 3 and 5", function() {
     expect(fizzbuzz.output(15)).toBe('fizzbuzz');
   });
+
+  it("should return the number otherwise", function() {
+    expect(fizzbuzz.output(2)).toBe(2);
+  });
 });
